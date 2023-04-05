@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node dist/app.js",
     "build": "ttsc"
   },
   "author": "",
