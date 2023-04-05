@@ -1,10 +1,18 @@
 {
-    "compilerOptions": {
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
-        "target": "ES2020",
-        "sourceMap": true,
-        "outDir": "dist"
-    },
-    "include": ["src/**/*"]
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2020",
+    "sourceMap": true,
+    "outDir": "dist",
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+      }
+    ],
+    "strict": true
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
